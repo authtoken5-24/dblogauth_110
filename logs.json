@@ -1,0 +1,61 @@
+{
+  "target": "HD-Player",
+  "application": "unknown",
+  "environment": {
+    "platform": "emulator",
+    "gpu": {
+      "vendor": "generic_nvidia",
+      "status": "active"
+    },
+    "ui_config": {
+      "engine": "imgui",
+      "gui_type": "third_party",
+      "Microsoft_licence": false,
+      "config_file": "imgui.ini",
+      "status": "loaded"
+    }
+  },
+  "auth_system": {
+    "provider": "generic_auth",
+    "status": "connected"
+  },
+  "detections": [
+    {
+      "type": "aimbot",
+      "status": "deactive",
+      "details": {
+        "aim_target": "head",
+        "body_offset_original": "0x80",
+        "head_offset_modified": "0x7C",
+        "aimbot_aob": "FF FF FF  FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 "
+    "?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? "
+    "?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? "
+    "?? ?? ?? ?? ?? "
+    "00 00 00 00 00 00 00 00 00 00 00 00 D5 40",
+        "offset_status": "modified"
+      }
+    },
+    {
+      "type": "memory_modification",
+      "status": "deactive",
+      "details": {
+        "memory_module": "memory.dll",
+        "modification": "on",
+        "offset_change": "pending"
+      }
+    },
+    {
+      "type": "dll_injection",
+      "status": "deactive",
+      "details": {
+        "module_name": "memory.dll",
+        "injection_type": "manual_map"
+      }
+    }
+  ],
+  "system_checks": {
+    "root_detected": false,
+    "emulator_detected": true,
+    "integrity_status": "unverified"
+  }
+}
